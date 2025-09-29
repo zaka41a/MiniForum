@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# PHP / Composer
+/vendor/
+/composer.lock
+
+# Env & config
+.env
+.env.*
+*.sqlite
+*.log
+
+# Node (si front)
+node_modules/
+npm-debug.log*
+yarn.lock

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="topics" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <path d="M4 6h16v10a2 2 0 0 1-2 2H8l-4 4V6z" stroke-width="1.6"/>
+  </symbol>
+  <symbol id="user" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <circle cx="12" cy="8" r="4" stroke-width="1.6"/>
+    <path d="M4 22c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke-width="1.6"/>
+  </symbol>
+  <symbol id="login" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <path d="M10 7V5a2 2 0 0 1 2-2h7v18h-7a2 2 0 0 1-2-2v-2" stroke-width="1.6"/>
+    <path d="M3 12h12M11 8l4 4-4 4" stroke-width="1.6"/>
+  </symbol>
+  <symbol id="logout" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <path d="M14 7V5a2 2 0 0 0-2-2H5v18h7a2 2 0 0 0 2-2v-2" stroke-width="1.6"/>
+    <path d="M21 12H9m4-4 4 4-4 4" stroke-width="1.6"/>
+  </symbol>
+  <symbol id="external" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <path d="M14 3h7v7" stroke-width="1.6"/>
+    <path d="M10 14 21 3" stroke-width="1.6"/>
+    <path d="M21 14v7H3V3h7" stroke-width="1.6"/>
+  </symbol>
+  <symbol id="cog" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <circle cx="12" cy="12" r="3" stroke-width="1.6"/>
+    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 5 15.4a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06A2 2 0 1 1 7.04 2.7l.06.06A1.65 1.65 0 0 0 8.92 3 1.65 1.65 0 0 0 10 1.51V1a2 2 0 1 1 4 0v.09A1.65 1.65 0 0 0 15 2.6a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9c.4 0 .78.15 1.06.43.28.28.44.66.44 1.06s-.16.78-.44 1.06A1.5 1.5 0 0 1 19.4 15z" stroke-width="1"/>
+  </symbol>
+  <symbol id="shield" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <path d="M12 3l8 4v6c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V7l8-4z" stroke-width="1.6"/>
+    <path d="M9 12l2 2 4-4" stroke-width="1.6"/>
+  </symbol>
+  <symbol id="search" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <circle cx="11" cy="11" r="7" stroke-width="1.6"/>
+    <path d="M21 21l-4.35-4.35" stroke-width="1.6"/>
+  </symbol>
+</svg>

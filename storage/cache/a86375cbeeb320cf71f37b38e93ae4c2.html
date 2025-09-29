@@ -1,0 +1,51 @@
+<!doctype html><html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Protection CSRF &amp; XSS – bonnes pratiques</title>
+<link rel="stylesheet" href="/assets/app.css">
+</head><body>
+<div class="container pad-bottom">
+  <div class="header">
+    <div class="brand">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 7h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7z" stroke="#7c8cff" stroke-width="1.5"/><path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" stroke="#5dd3ff" stroke-width="1.5"/></svg>
+      <h1>MiniForum</h1>
+    </div>
+    <div class="nav">
+      <a class="btn secondary" href="/">Sujets</a>
+                        <a class="btn" href="/moderator">Modération</a>
+                <form method="post" action="/logout" style="display:inline;"><input type="hidden" name="_token" value="0e3824ceaf31e2e9f9d304834bca9a9e9733742989899172e0a1dba94cc623c2"><button class="btn secondary">Se déconnecter</button></form>
+          </div>
+  </div>
+
+  <div class="card pad">
+<div class="tags">
+<span class="tag">#php</span><span class="tag">#mvc</span><span class="tag">#ajax</span></div>
+<h2>Protection CSRF &amp; XSS – bonnes pratiques</h2>
+<div class="meta">par Admin • le 2025-09-27 22:14:02</div>
+<div class="hr"></div>
+<div class="markdown"><div><p>Je cherche un exemple clair de <strong>CSRF token</strong> et d’<strong>échappement HTML</strong> pour éviter XSS.</p></div></div>
+
+
+<form method="post" action="/topics/5/close" style="margin-top:12px;display:inline-block;"><input type="hidden" name="_token" value="0e3824ceaf31e2e9f9d304834bca9a9e9733742989899172e0a1dba94cc623c2"><button class="btn danger">Fermer</button></form>
+</div>
+
+
+<div class="hr"></div>
+
+
+
+
+<div class="hr"></div>
+
+
+<div class="card pad">
+<form method="post" action="/topics/5/reply" class="formRow">
+<input type="hidden" name="_token" value="0e3824ceaf31e2e9f9d304834bca9a9e9733742989899172e0a1dba94cc623c2"><input type="text" name="website" class="hidden" autocomplete="off"> <!-- honeypot -->
+<textarea name="body" rows="6" class="input" placeholder="Votre réponse (Markdown autorisé)" required></textarea>
+<button class="btn">Publier la réponse</button>
+</form>
+</div>
+
+
+<div class="footer">© 2025 MiniForum</div>
+</div> <!-- .container -->
+</body></html>
