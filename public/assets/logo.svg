@@ -1,0 +1,30 @@
+<svg width="200" height="40" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon circle with gradient -->
+  <circle cx="20" cy="20" r="18" fill="url(#logoGradient)"/>
+
+  <!-- Chat bubble icon -->
+  <g transform="translate(11, 11)">
+    <!-- Main bubble -->
+    <path d="M1.5 0C0.67 0 0 0.67 0 1.5V8.5C0 9.33 0.67 10 1.5 10H3V13L6.5 10H13.5C14.33 10 15 9.33 15 8.5V1.5C15 0.67 14.33 0 13.5 0H1.5Z"
+          fill="white" opacity="0.95"/>
+
+    <!-- Dots inside -->
+    <circle cx="4.5" cy="5" r="1" fill="#6366f1" opacity="0.9"/>
+    <circle cx="7.5" cy="5" r="1" fill="#6366f1" opacity="0.9"/>
+    <circle cx="10.5" cy="5" r="1" fill="#6366f1" opacity="0.9"/>
+  </g>
+
+  <!-- Text "MiniForum" -->
+  <g transform="translate(45, 12)">
+    <text x="0" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#0f172a" letter-spacing="-0.5">
+      Mini<tspan fill="#6366f1">Forum</tspan>
+    </text>
+  </g>
+
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5457e3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

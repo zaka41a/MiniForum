@@ -1,0 +1,23 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient circle -->
+  <circle cx="16" cy="16" r="16" fill="url(#faviconGradient)"/>
+
+  <!-- Chat bubble icon -->
+  <g transform="translate(6, 7)">
+    <!-- Main bubble -->
+    <path d="M2 0C0.9 0 0 0.9 0 2V11C0 12.1 0.9 13 2 13H4V17L9 13H18C19.1 13 20 12.1 20 11V2C20 0.9 19.1 0 18 0H2Z"
+          fill="white" opacity="0.95"/>
+
+    <!-- Dots inside -->
+    <circle cx="6" cy="6.5" r="1.5" fill="#6366f1" opacity="0.9"/>
+    <circle cx="10" cy="6.5" r="1.5" fill="#6366f1" opacity="0.9"/>
+    <circle cx="14" cy="6.5" r="1.5" fill="#6366f1" opacity="0.9"/>
+  </g>
+
+  <defs>
+    <linearGradient id="faviconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5457e3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

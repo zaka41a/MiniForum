@@ -41,8 +41,11 @@
           </select>
         </td>
 
-        <!-- Colonne Actions : Sauvegarder + Supprimer -->
+        <!-- Colonne Actions : Edit + Save + Delete -->
         <td class="actions">
+          <!-- Bouton Edit -->
+          <a href="/panel/admin/users/<?= $u['id'] ?>/edit" class="btn outline sm">Edit</a>
+
           <!-- Formulaire pour sauvegarder le rôle -->
           <form id="<?= $formId ?>" method="post" action="/panel/admin/users/<?= $u['id'] ?>/role" style="display:inline">
             <?= $csrf->field() ?>

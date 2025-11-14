@@ -11,10 +11,10 @@
   </div>
 
   <div class="card">
-    <h3>Vote management</h3>
-    <p class="meta">View recent posts and reset votes.</p>
+    <h3>Comments Management</h3>
+    <p class="meta">View recent posts, reset votes, and delete comments.</p>
     <div class="form-row">
-      <a class="btn outline" href="#votes">Go to votes</a>
+      <a class="btn outline" href="#comments">Go to comments</a>
     </div>
   </div>
 </div>
@@ -40,9 +40,9 @@
   </table>
 </div>
 
-<!-- Section VOTES -->
-<div class="card" id="votes" style="margin-top:16px">
-  <h3>Vote management</h3>
+<!-- Section COMMENTS -->
+<div class="card" id="comments" style="margin-top:16px">
+  <h3>Comments Management</h3>
   <table>
     <tr><th>Post</th><th>Topic</th><th>Author</th><th>Score</th><th>Actions</th></tr>
     <?php foreach($posts as $p): ?>
@@ -52,9 +52,14 @@
         <td><?= e($p['name']) ?></td>
         <td><strong><?= (int)$p['score'] ?></strong></td>
         <td class="actions">
-          <form method="post" action="/panel/mod/votes/<?= $p['id'] ?>/reset" onsubmit="return confirm('Reset votes for this post?')">
+          <form method="post" action="/panel/mod/votes/<?= $p['id'] ?>/reset" style="display:inline" onsubmit="return confirm('Reset votes for this post?')">
             <?= $csrf->field() ?>
             <button class="btn warn sm">Reset votes</button>
+          </form>
+
+          <form method="post" action="/panel/mod/posts/<?= $p['id'] ?>/delete" style="display:inline" onsubmit="return confirm('Delete this comment? This action cannot be undone.')">
+            <?= $csrf->field() ?>
+            <button class="btn danger sm">Delete</button>
           </form>
         </td>
       </tr>

@@ -26,6 +26,43 @@ class AdminController {
     header('Location: /panel/admin');
   }
 
+  public function editUser(int $id){
+    $this->c->get('auth')->requireRole('admin');
+    $db = $this->c->get('db');
+    $user = \App\Models\User::findById($db, $id);
+    if(!$user) exit('User not found');
+    View::render('panel/edit-user',[
+      'title'=>'Edit User',
+      'user'=>$user,
+      'csrf'=>$this->c->get('csrf')
+    ]);
+  }
+
+  public function updateUser(int $id){
+    $this->c->get('auth')->requireRole('admin');
+    if(!$this->c->get('csrf')->validate($_POST['_token']??'')) exit('CSRF');
+
+    $db = $this->c->get('db');
+    $name = trim($_POST['name']??'');
+    $email = trim($_POST['email']??'');
+    $role = $_POST['role']??'user';
+    $newPassword = trim($_POST['new_password']??'');
+
+    // Validate role
+    if(!in_array($role,['user','mod','admin'],true)) $role='user';
+
+    // Update user info
+    \App\Models\User::update($db, $id, $name, $email, $role);
+
+    // Update password if provided
+    if(!empty($newPassword) && strlen($newPassword) >= 6) {
+      \App\Models\User::updatePassword($db, $id, $newPassword);
+    }
+
+    $_SESSION['flash'] = 'User updated successfully';
+    header('Location: /panel/admin');
+  }
+
   public function deleteUser(int $id){
     $this->c->get('auth')->requireRole('admin');
     if(!$this->c->get('csrf')->validate($_POST['_token']??'')) exit('CSRF');

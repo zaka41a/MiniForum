@@ -54,5 +54,13 @@ public static function resetVotes(PDO $db, int $postId): void
     $s->execute([$postId]);
 }
 
+public static function delete(PDO $db, int $postId): void
+{
+    // First delete all votes associated with this post
+    $db->prepare("DELETE FROM votes WHERE post_id = ?")->execute([$postId]);
+    // Then delete the post itself
+    $db->prepare("DELETE FROM posts WHERE id = ?")->execute([$postId]);
+}
+
 
 }

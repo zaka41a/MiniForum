@@ -1,7 +1,6 @@
 <?php
-use PDO;
 
-return function(array $cfg): PDO {
+return function(array $cfg): \PDO {
   return new PDO(
     $cfg['db']['dsn'],
     $cfg['db']['user'],

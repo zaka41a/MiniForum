@@ -24,6 +24,8 @@ $r->get('/topics/{id:\d+}-{slug:[a-z0-9\-]+}', [TopicController::class,'show']);
 
   $r->get('/me', [PanelController::class,'me']);
   $r->get('/panel/admin', [AdminController::class,'dashboard']);
+  $r->get('/panel/admin/users/{id:\d+}/edit', [AdminController::class,'editUser']);
+  $r->post('/panel/admin/users/{id:\d+}/update', [AdminController::class,'updateUser']);
   $r->post('/panel/admin/users/{id:\d+}/role', [AdminController::class,'setRole']);
   $r->post('/panel/admin/users/{id:\d+}/delete', [AdminController::class,'deleteUser']);
   $r->post('/panel/admin/tags/create', [AdminController::class,'createTag']);
@@ -35,4 +37,5 @@ $r->get('/topics/{id:\d+}-{slug:[a-z0-9\-]+}', [TopicController::class,'show']);
   $r->get('/panel/mod', [PanelController::class,'mod']);
   $r->post('/panel/mod/topics/{id:\d+}/toggle', [PanelController::class,'toggleTopic']);
   $r->post('/panel/mod/votes/{postId:\d+}/reset', [PanelController::class,'resetVotes']);
+  $r->post('/panel/mod/posts/{postId:\d+}/delete', [PanelController::class,'deletePost']);
 };

@@ -20,7 +20,15 @@
         </form>
       </aside>
       <div class="content" style="flex:1">
-        <div class="meta">by <strong><?= e($p['name']) ?></strong> — <?= e($p['created_at']) ?></div>
+        <div class="meta">
+          by <strong><?= e($p['name']) ?></strong> — <?= e($p['created_at']) ?>
+          <?php if($auth->check() && in_array($auth->role(), ['mod', 'admin'])): ?>
+            <form method="post" action="/panel/mod/posts/<?= $p['id'] ?>/delete" style="display:inline;margin-left:12px" onsubmit="return confirm('Delete this comment? This action cannot be undone.')">
+              <?= $csrf->field() ?>
+              <button class="btn danger sm" style="font-size:11px;padding:4px 8px">Delete</button>
+            </form>
+          <?php endif; ?>
+        </div>
         <div class="body"><?= $md->toHtml(e($p['body'])) ?></div>
       </div>
     </div>

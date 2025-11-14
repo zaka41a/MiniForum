@@ -42,4 +42,15 @@ class PanelController {
     Post::resetVotes($this->c->get('db'),$postId);
     header('Location: /panel/mod');
   }
+
+  public function deletePost(int $postId){
+    $this->c->get('auth')->requireRole('mod');
+    if(!$this->c->get('csrf')->validate($_POST['_token']??'')) exit('CSRF');
+    Post::delete($this->c->get('db'),$postId);
+    $_SESSION['flash'] = 'Comment deleted successfully';
+
+    // Redirect back to mod panel or referer
+    $referer = $_SERVER['HTTP_REFERER'] ?? '/panel/mod';
+    header('Location: ' . $referer);
+  }
 }

@@ -1,10 +1,9 @@
 <section class="hero">
   <h1>Welcome to MiniForum</h1>
-    <br>
-  <p>A mini Questions/Answers forum in native PHP. Post, vote, moderate.</p>
+  <p>A modern Questions & Answers platform built with native PHP.<br>Share knowledge, engage with the community, and grow together.</p>
   <?php if(!$auth->check()): ?>
-    <div class="form-row">
-      <a class="btn" href="/register">Sign Up</a>
+    <div class="form-row" style="justify-content:center;margin-top:24px">
+      <a class="btn" href="/register">Get Started</a>
       <a class="btn ghost" href="/login">Login</a>
     </div>
   <?php endif; ?>
