@@ -94,31 +94,6 @@ Perfect for educational purposes, community forums, internal knowledge bases, or
   - Screen reader friendly
 
 ---
-
-## 📸 Screenshots
-
-### Home Page
-![Home Page](doc/screenshots/home.png)
-*Modern landing page with hero section and latest topics*
-
-### Topic Discussion
-![Topic View](doc/screenshots/topic.png)
-*Full discussion thread with voting, replies, and Markdown support*
-
-### Admin Dashboard
-![Admin Panel](doc/screenshots/admin.png)
-*Complete administrative control panel*
-
-### Moderator Panel
-![Mod Panel](doc/screenshots/mod.png)
-*Moderation tools for community management*
-
-### User Edit
-![Edit User](doc/screenshots/edit-user.png)
-*Professional user editing interface*
-
----
-
 ## 🚀 Quick Start
 
 ### Prerequisites
