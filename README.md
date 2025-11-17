@@ -284,7 +284,7 @@ Replace `public/assets/logo.svg` and `public/favicon.svg` with your own branding
 | Create Topics            | ✅   | ✅        | ✅    |
 | Reply to Topics          | ✅   | ✅        | ✅    |
 | Vote on Posts            | ✅   | ✅        | ✅    |
-| Delete Own Comments      | ❌   | ❌        | ❌    |
+| Delete Own Comments      | ❌   | ✅        | ✅    |
 | Delete Any Comment       | ❌   | ✅        | ✅    |
 | Reset Votes              | ❌   | ✅        | ✅    |
 | Open/Close Topics        | ❌   | ✅        | ✅    |
