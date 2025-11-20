@@ -417,11 +417,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact & Support
 
-- **Author**: Your Name
-- **Email**: your.email@example.com
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **Issues**: [Report a bug](https://github.com/yourusername/miniforum/issues)
-
+- **Author**: zakaria sabiri
+- **Email**: zaka41a
+- **GitHub**: [@zaka41a](https://github.com/zaka41a)
+- 
 ---
 
 ## 🗺️ Roadmap
@@ -455,6 +454,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ⭐ Star this repository if you find it helpful!
 
-[Report Bug](https://github.com/yourusername/miniforum/issues) • [Request Feature](https://github.com/yourusername/miniforum/issues)
+[Report Bug](https://github.com/zaka41a/miniforum/issues) • [Request Feature](https://github.com/zaka41a/miniforum/issues)
 
 </div>
