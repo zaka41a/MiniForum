@@ -424,7 +424,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Author**: zakaria sabiri
 - **Email**: zaka41a
 - **GitHub**: [@zaka41a](https://github.com/zaka41a)
-- 
+  
 ---
 
 ## 🗺️ Roadmap
