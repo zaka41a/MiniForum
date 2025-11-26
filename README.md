@@ -1,3 +1,5 @@
+<div align="center">
+  
 # 💬 MiniForum
 
 > A modern, professional Questions & Answers forum platform built with native PHP
@@ -13,6 +15,8 @@
 **MiniForum** is a lightweight yet powerful Q&A forum platform built entirely with native PHP. It combines modern UI/UX design with robust backend functionality, offering a complete solution for community discussions, knowledge sharing, and collaborative problem-solving.
 
 Perfect for educational purposes, community forums, internal knowledge bases, or as a learning project to understand modern PHP development patterns.
+
+</div>
 
 ---
 
