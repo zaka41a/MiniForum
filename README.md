@@ -421,8 +421,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact & Support
 
-- **Author**: zakaria sabiri
-- **Email**: zaka41a
+- **Author**: zaka41a
+- **Email**: zaksab98@gmail.com
 - **GitHub**: [@zaka41a](https://github.com/zaka41a)
   
 ---
